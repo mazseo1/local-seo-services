@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Local SEO & Business Websites | Grow Your Local Business</title>
+<meta name="description" content="Professional business website creation and monthly Google Business Profile optimization. Choose a website plan from $250 or GMB optimization for $250/month.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0099cc">
+<meta property="og:title" content="Local SEO & Business Website Services">
+<meta property="og:description" content="Professional websites and Google Business Profile optimization for local businesses.">
+<meta property="og:type" content="website">
+
+<style>
+:root{
+  --blue:#0099cc;
+  --blue-dark:#007da8;
+  --orange:#ff9933;
+  --orange-dark:#e6811d;
+  --ink:#14202b;
+  --muted:#647482;
+  --light:#f5f9fb;
+  --border:#e5edf1;
+  --white:#fff;
+  --shadow:0 18px 50px rgba(20,45,60,.10);
+  --radius:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  color:var(--ink);background:#fff;line-height:1.6;
+}
+a{text-decoration:none;color:inherit}
+.container{width:min(1160px,92%);margin:auto}
+.topbar{background:#102431;color:#dceaf0;font-size:13px;padding:8px 0}
+.topbar .container{display:flex;justify-content:space-between;gap:20px}
+nav{
+  position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);
+  backdrop-filter:blur(12px);border-bottom:1px solid var(--border)
+}
+.nav-inner{height:76px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:900;font-size:23px;letter-spacing:-.7px}
+.logo span{color:var(--blue)}
+.logo em{color:var(--orange);font-style:normal}
+.nav-links{display:flex;gap:27px;align-items:center;font-size:14px;font-weight:700}
+.nav-links a:hover{color:var(--blue)}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  border:0;border-radius:10px;padding:13px 20px;font-weight:800;cursor:pointer;
+  transition:.2s transform,.2s box-shadow,.2s background;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--blue);color:#fff;box-shadow:0 8px 22px rgba(0,153,204,.25)}
+.btn-primary:hover{background:var(--blue-dark)}
+.btn-orange{background:var(--orange);color:#17232c;box-shadow:0 8px 22px rgba(255,153,51,.25)}
+.btn-orange:hover{background:var(--orange-dark);color:#fff}
+.btn-outline{border:1px solid #b9d7e2;background:#fff;color:var(--blue)}
+.mobile-btn{display:none;background:none;border:0;font-size:25px}
+
+.hero{
+  position:relative;overflow:hidden;padding:90px 0 80px;
+  background:linear-gradient(135deg,#f4fbfe 0%,#fff 55%,#fff8ef 100%);
+}
+.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;filter:blur(2px);opacity:.15}
+.hero:before{width:420px;height:420px;background:var(--blue);right:-170px;top:-170px}
+.hero:after{width:320px;height:320px;background:var(--orange);left:-170px;bottom:-180px}
+.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:60px;align-items:center;position:relative;z-index:1}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;color:var(--blue);font-weight:900;
+  background:#e7f7fc;border:1px solid #c9ebf5;padding:7px 12px;border-radius:999px;font-size:12px;text-transform:uppercase;letter-spacing:.7px
+}
+.hero h1{font-size:clamp(40px,5.2vw,66px);line-height:1.04;letter-spacing:-2.6px;margin:20px 0}
+.hero h1 span{color:var(--blue)}
+.hero h1 strong{color:var(--orange)}
+.hero p{font-size:18px;color:var(--muted);max-width:650px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0}
+.trust{display:flex;gap:18px;flex-wrap:wrap;font-size:13px;color:#4c626f;font-weight:700}
+.trust span{display:flex;align-items:center;gap:6px}
+.check{color:var(--blue);font-weight:900}
+.hero-card{
+  background:#fff;border:1px solid var(--border);border-radius:25px;padding:28px;
+  box-shadow:var(--shadow);position:relative
+}
+.hero-card:before{
+  content:"LOCAL GROWTH";position:absolute;right:20px;top:20px;font-size:10px;font-weight:900;
+  color:var(--orange);letter-spacing:1.2px
+}
+.dashboard{border:1px solid #e5edf1;border-radius:18px;overflow:hidden;background:#fbfdfe}
+.dash-head{padding:15px 18px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;font-size:13px;font-weight:800}
+.dot{width:9px;height:9px;border-radius:50%;background:#25b46b;display:inline-block;margin-right:6px}
+.metrics{display:grid;grid-template-columns:1fr 1fr;padding:18px;gap:12px}
+.metric{background:#fff;border:1px solid var(--border);padding:16px;border-radius:13px}
+.metric small{display:block;color:var(--muted);font-weight:700}
+.metric b{font-size:25px}
+.chart{height:130px;margin:0 18px 18px;border-radius:13px;background:linear-gradient(180deg,#eefaff,#fff);position:relative;overflow:hidden}
+.chart svg{width:100%;height:100%}
+
+section{padding:90px 0}
+.section-head{text-align:center;max-width:720px;margin:0 auto 48px}
+.kicker{color:var(--orange);font-weight:900;text-transform:uppercase;letter-spacing:1.5px;font-size:12px}
+.section-head h2{font-size:clamp(30px,4vw,44px);letter-spacing:-1.5px;line-height:1.15;margin:10px 0}
+.section-head p{color:var(--muted)}
+
+.services{background:#fff}
+.service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.service-card{padding:27px;border:1px solid var(--border);border-radius:var(--radius);background:#fff;transition:.2s;box-shadow:0 8px 30px rgba(20,45,60,.04)}
+.service-card:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:#bce5f1}
+.icon{width:50px;height:50px;border-radius:14px;background:#e8f8fc;color:var(--blue);display:grid;place-items:center;font-size:23px;margin-bottom:20px}
+.service-card:nth-child(even) .icon{background:#fff2e4;color:var(--orange)}
+.service-card h3{font-size:19px;margin-bottom:8px}
+.service-card p{font-size:14px;color:var(--muted)}
+
+.pricing{background:var(--light)}
+.price-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;align-items:stretch}
+.price-card{background:#fff;border:1px solid var(--border);border-radius:20px;padding:29px;position:relative;display:flex;flex-direction:column}
+.price-card.featured{border:2px solid var(--blue);box-shadow:0 18px 55px rgba(0,153,204,.15);transform:translateY(-10px)}
+.badge{position:absolute;right:18px;top:18px;background:var(--orange);padding:5px 9px;border-radius:999px;font-size:10px;font-weight:900;text-transform:uppercase}
+.price-card h3{font-size:20px}
+.price-card .desc{font-size:13px;color:var(--muted);min-height:42px;margin:7px 0 17px}
+.price{font-size:42px;font-weight:950;letter-spacing:-2px}
+.price small{font-size:13px;color:var(--muted);font-weight:700;letter-spacing:0}
+.features{list-style:none;margin:23px 0;display:grid;gap:10px;font-size:13px;color:#415460;flex:1}
+.features li:before{content:"✓";color:var(--blue);font-weight:900;margin-right:9px}
+.price-card .btn{width:100%}
+
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.step{position:relative;padding:28px;border:1px solid var(--border);border-radius:18px}
+.num{font-size:13px;color:var(--orange);font-weight:900}
+.step h3{margin:10px 0 7px}
+.step p{font-size:14px;color:var(--muted)}
+
+.split{background:#102431;color:#fff}
+.split-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.split h2{font-size:clamp(30px,4vw,46px);line-height:1.12;letter-spacing:-1.5px;margin:12px 0 18px}
+.split p{color:#b8cad2}
+.points{display:grid;gap:13px;margin:25px 0}
+.points div{display:flex;gap:10px;align-items:flex-start;font-size:14px}
+.points b{color:#fff}
+.points i{color:var(--orange);font-style:normal;font-weight:900}
+.audit-card{background:#fff;color:var(--ink);padding:34px;border-radius:22px}
+.audit-card h3{font-size:25px}
+.audit-card p{color:var(--muted);margin:7px 0 20px}
+
+.faq{background:#f8fafb}
+.faq-list{max-width:850px;margin:auto;display:grid;gap:12px}
+details{background:#fff;border:1px solid var(--border);border-radius:13px;padding:18px 21px}
+summary{cursor:pointer;font-weight:850}
+details p{color:var(--muted);font-size:14px;padding-top:12px}
+
+.cta{
+  padding:80px 0;background:linear-gradient(110deg,var(--blue),#007ba5);
+  color:#fff;text-align:center
+}
+.cta h2{font-size:clamp(31px,4vw,48px);line-height:1.1;letter-spacing:-1.5px}
+.cta p{max-width:650px;margin:13px auto 25px;color:#e2f6fc}
+.cta .btn{background:var(--orange);color:#17232c}
+
+footer{background:#0c1c25;color:#a9bdc7;padding:55px 0 25px}
+.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:50px}
+footer h3{color:#fff;margin-bottom:12px}
+footer p,footer a{font-size:13px}
+footer a:hover{color:#fff}
+.footer-links{display:grid;gap:8px}
+.copyright{border-top:1px solid #203640;margin-top:35px;padding-top:18px;font-size:12px;display:flex;justify-content:space-between;gap:15px}
+
+@media(max-width:950px){
+  .service-grid,.price-grid{grid-template-columns:repeat(2,1fr)}
+  .process-grid{grid-template-columns:repeat(2,1fr)}
+  .hero-grid,.split-grid{grid-template-columns:1fr}
+  .hero-card{max-width:650px}
+  .price-card.featured{transform:none}
+}
+@media(max-width:700px){
+  .topbar .container{justify-content:center}.topbar .container span:first-child{display:none}
+  .nav-links{display:none}.mobile-btn{display:block}
+  .nav-inner{height:68px}
+  .hero{padding:65px 0}
+  .hero h1{letter-spacing:-1.8px}
+  section{padding:65px 0}
+  .service-grid,.price-grid,.process-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr;gap:28px}
+  .copyright{display:block}.copyright span{display:block;margin-top:7px}
+}
+
+.portfolio{background:#fff}
+.portfolio-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.portfolio-card{
+  display:flex;flex-direction:column;justify-content:space-between;
+  min-height:260px;padding:30px;border:1px solid var(--border);border-radius:20px;
+  background:linear-gradient(145deg,#fff,#f7fbfd);box-shadow:0 10px 35px rgba(20,45,60,.06);
+  transition:.2s;overflow:hidden;position:relative
+}
+.portfolio-card:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:#bce5f1}
+.portfolio-card:after{
+  content:"";position:absolute;width:180px;height:180px;border-radius:50%;
+  right:-80px;bottom:-90px;background:var(--orange);opacity:.10
+}
+.portfolio-tag{
+  display:inline-block;width:max-content;padding:6px 10px;border-radius:999px;
+  background:#e8f8fc;color:var(--blue);font-size:11px;font-weight:900;text-transform:uppercase;
+  letter-spacing:.8px;margin-bottom:18px
+}
+.portfolio-card:nth-child(2) .portfolio-tag{background:#fff2e4;color:var(--orange-dark)}
+.portfolio-card h3{font-size:25px;letter-spacing:-.5px;margin-bottom:8px}
+.portfolio-card p{color:var(--muted);font-size:14px;max-width:480px}
+.portfolio-link{
+  display:inline-flex;align-items:center;gap:8px;margin-top:25px;color:var(--blue);
+  font-weight:900;font-size:14px;position:relative;z-index:2
+}
+.portfolio-link:hover{color:var(--orange-dark)}
+@media(max-width:700px){.portfolio-grid{grid-template-columns:1fr}}
+</style>
+</head>
+
+<body>
+<div class="topbar">
+  <div class="container">
+    <span>Local SEO & Business Growth Specialists</span><span>📞 +92 314 9629099 · ✉ rankedgeup@gmail.com</span>
+    <span>Free consultation available · No long-term contracts</span>
+  </div>
+</div>
+
+<nav>
+  <div class="container nav-inner">
+    <a href="#" class="logo"><span>Local</span>Boost<em>.</em></a>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#portfolio">Portfolio</a><a href="#portfolio">Projects</a><a href="#process">How It Works</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn-primary" href="#contact">Get Started</a>
+    </div>
+    <button class="mobile-btn" aria-label="Open menu" onclick="toggleMenu()">☰</button>
+  </div>
+</nav>
+
+<main>
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">● Built for Local Businesses</span>
+      <h1>Get Found Locally.<br><span>Look Professional.</span><br><strong>Grow Faster.</strong></h1>
+      <p>We build conversion-focused business websites and optimize your Google Business Profile so local customers can find, trust, and contact you.</p>
+      <div class="hero-actions">
+        <a href="#pricing" class="btn btn-primary">View Packages →</a>
+        <a href="#contact" class="btn btn-orange">Start Your Project</a>
+      </div>
+      <div class="trust">
+        <span><b class="check">✓</b> Mobile Friendly</span>
+        <span><b class="check">✓</b> SEO Ready</span>
+        <span><b class="check">✓</b> Fast & Secure</span>
+        <span><b class="check">✓</b> Local-Focused</span>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <div class="dashboard">
+        <div class="dash-head"><span>Local Visibility Dashboard</span><span><i class="dot"></i>Growing</span></div>
+        <div class="metrics">
+          <div class="metric"><small>Website Visitors</small><b>+68%</b></div>
+          <div class="metric"><small>Local Visibility</small><b>+54%</b></div>
+          <div class="metric"><small>Profile Actions</small><b>+41%</b></div>
+          <div class="metric"><small>Leads</small><b>+37%</b></div>
+        </div>
+        <div class="chart">
+          <svg viewBox="0 0 500 130" preserveAspectRatio="none" aria-hidden="true">
+            <polyline points="0,110 70,100 130,106 190,75 250,85 315,50 370,63 430,28 500,15" fill="none" stroke="#0099cc" stroke-width="5"/>
+            <polyline points="0,120 70,115 130,117 190,104 250,108 315,88 370,92 430,73 500,65" fill="none" stroke="#ff9933" stroke-width="3"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="services">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">What We Do</div>
+      <h2>Everything your local business needs online</h2>
+      <p>Simple, practical digital services designed to turn local searches into real customers.</p>
+    </div>
+    <div class="service-grid">
+      <article class="service-card"><div class="icon">◫</div><h3>Business Websites</h3><p>Modern, responsive websites built around your services, location, brand, and customer journey.</p></article>
+      <article class="service-card"><div class="icon">⌖</div><h3>Google Business Profile</h3><p>Ongoing profile optimization to improve local visibility, relevance, trust, and customer actions.</p></article>
+      <article class="service-card"><div class="icon">⌕</div><h3>Local SEO</h3><p>On-page and local search improvements that help your business compete for valuable local searches.</p></article>
+      <article class="service-card"><div class="icon">↗</div><h3>Conversion Optimization</h3><p>Clear calls to action, service information, trust signals, and layouts built to generate enquiries.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="pricing" class="pricing">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Simple Pricing</div>
+      <h2>Choose the right package for your business</h2>
+      <p>No confusing packages. Start with the service you need and upgrade when your business grows.</p>
+    </div>
+    <div class="price-grid">
+      <article class="price-card">
+        <h3>Basic Website</h3><p class="desc">A professional online presence for small businesses.</p>
+        <div class="price">$250 <small>one-time</small></div>
+        <ul class="features">
+          <li>Professional business website</li><li>Up to 5 core pages</li><li>Mobile responsive design</li><li>Contact & enquiry CTA</li><li>Basic on-page SEO</li><li>Social media links</li>
+        </ul>
+        <a href="#contact" class="btn btn-outline">Choose Basic</a>
+      </article>
+
+      <article class="price-card featured">
+        <span class="badge">Most Popular</span>
+        <h3>Professional</h3><p class="desc">A stronger website built for growth and local visibility.</p>
+        <div class="price">$350 <small>one-time</small></div>
+        <ul class="features">
+          <li>Everything in Basic</li><li>Up to 8 pages</li><li>Service/location structure</li><li>Advanced on-page SEO</li><li>Google Business Profile integration</li><li>Lead-focused design</li><li>Speed optimization</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary">Choose Professional</a>
+      </article>
+
+      <article class="price-card">
+        <h3>Premium</h3><p class="desc">A complete website foundation for serious local growth.</p>
+        <div class="price">$500 <small>one-time</small></div>
+        <ul class="features">
+          <li>Everything in Professional</li><li>Up to 12 pages</li><li>Advanced local SEO setup</li><li>Location/service architecture</li><li>Schema-ready structure</li><li>Conversion optimization</li><li>Analytics & Search Console setup</li>
+        </ul>
+        <a href="#contact" class="btn btn-outline">Choose Premium</a>
+      </article>
+
+      <article class="price-card">
+        <h3>GMB Optimization</h3><p class="desc">Monthly Google Business Profile optimization for local growth.</p>
+        <div class="price">$250 <small>/ month</small></div>
+        <ul class="features">
+          <li>Google Business Profile optimization</li><li>Category & service review</li><li>Business information optimization</li><li>Local keyword strategy</li><li>Google Posts support</li><li>Photo/content recommendations</li><li>Monthly performance review</li>
+        </ul>
+        <a href="#contact" class="btn btn-orange">Start Monthly SEO</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<section id="portfolio" class="services" style="background:#f8fbfc">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Our Work</div>
+      <h2>Local business projects we've built</h2>
+      <p>Explore examples of our work in the movers and packers industry, including business websites built around local search visibility and customer enquiries.</p>
+    </div>
+    <div class="service-grid" style="grid-template-columns:repeat(2,1fr);max-width:850px;margin:auto">
+      <article class="service-card" style="padding:32px">
+        <div class="icon">🚚</div>
+        <h3>Relocate Jeddah</h3>
+        <p>Local movers and packers website focused on moving services in Jeddah, residential relocation, commercial moves, packing, and route-based services.</p>
+        <a href="https://relocatejeddah.com/" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:20px;width:100%">Visit Website →</a>
+      </article>
+      <article class="service-card" style="padding:32px">
+        <div class="icon">📦</div>
+        <h3>Movers in Riyadh</h3>
+        <p>Riyadh-focused movers and packers website covering home shifting, furniture moving, office relocation, packing, commercial removal, and local service areas.</p>
+        <a href="https://moversinriyadh.com/" target="_blank" rel="noopener" class="btn btn-orange" style="margin-top:20px;width:100%">Visit Website →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<section id="portfolio" class="portfolio">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Our Work</div>
+      <h2>Real websites built for local businesses</h2>
+      <p>We understand the local service business because we have worked on real Movers & Packers websites in Saudi Arabia.</p>
+    </div>
+
+    <div class="portfolio-grid">
+      <article class="portfolio-card">
+        <div>
+          <span class="portfolio-tag">Movers & Packers · Jeddah</span>
+          <h3>Relocate Jeddah</h3>
+          <p>A local moving and relocation website focused on Jeddah residential and commercial moving services, service pages, location targeting, and local search visibility.</p>
+        </div>
+        <a class="portfolio-link" href="https://relocatejeddah.com/" target="_blank" rel="noopener noreferrer">
+          Visit relocatejeddah.com ↗
+        </a>
+      </article>
+
+      <article class="portfolio-card">
+        <div>
+          <span class="portfolio-tag">Movers & Packers · Riyadh</span>
+          <h3>Movers in Riyadh</h3>
+          <p>A dedicated Riyadh Movers & Packers website built around home shifting, furniture moving, office relocation, packing, commercial removal, and local area services.</p>
+        </div>
+        <a class="portfolio-link" href="https://moversinriyadh.com/" target="_blank" rel="noopener noreferrer">
+          Visit moversinriyadh.com ↗
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="process">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Our Process</div>
+      <h2>A straightforward process from idea to growth</h2>
+      <p>We keep the process simple, transparent, and focused on business results.</p>
+    </div>
+    <div class="process-grid">
+      <article class="step"><span class="num">01 / DISCOVER</span><h3>Understand Your Business</h3><p>We learn about your services, customers, locations, competitors, and goals.</p></article>
+      <article class="step"><span class="num">02 / BUILD</span><h3>Create Your Website</h3><p>Your website is designed around trust, usability, local relevance, and enquiries.</p></article>
+      <article class="step"><span class="num">03 / OPTIMIZE</span><h3>Improve Visibility</h3><p>We prepare the website and Google Business Profile for stronger local search performance.</p></article>
+      <article class="step"><span class="num">04 / GROW</span><h3>Keep Improving</h3><p>Use monthly optimization to keep your local presence accurate, useful, and competitive.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="split">
+  <div class="container split-grid">
+    <div>
+      <div class="kicker">Why Choose Us</div>
+      <h2>We build for people first — and search engines second.</h2>
+      <p>Your website should not just look good. It should answer customer questions quickly and make it easy to call, message, book, or request a quote.</p>
+      <div class="points">
+        <div><i>✓</i><span><b>Local-first strategy</b><br>Content and structure built around your actual service areas.</span></div>
+        <div><i>✓</i><span><b>Clear conversion paths</b><br>Customers always know what to do next.</span></div>
+        <div><i>✓</i><span><b>SEO-ready foundation</b><br>Clean structure that gives your SEO campaign a strong starting point.</span></div>
+        <div><i>✓</i><span><b>Fast, responsive experience</b><br>Designed for phones, tablets, and desktops.</span></div>
+      </div>
+    </div>
+    <div class="audit-card" id="contact">
+      <h3>Ready to grow locally?</h3>
+      <p>Tell us what your business needs and we'll recommend the right package.</p>
+      <a class="btn btn-primary" style="width:100%;margin-bottom:10px" href="mailto:rankedgeup@gmail.com?subject=Local%20SEO%20Project">Email: rankedgeup@gmail.com →</a>
+      <a class="btn btn-orange" style="width:100%" href="https://wa.me/923149629099" target="_blank" rel="noopener">WhatsApp: +92 314 9629099 →</a>
+      <div style="margin-top:16px;padding-top:15px;border-top:1px solid #e5edf1;text-align:center;color:#536773;font-size:14px">
+        <strong>Call:</strong> <a href="tel:+923149629099" style="color:#0099cc;font-weight:800">+92 314 9629099</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="faq">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">FAQ</div>
+      <h2>Questions before getting started?</h2>
+      <p>Here are answers to the questions local business owners ask most often.</p>
+    </div>
+    <div class="faq-list">
+      <details><summary>How long does a business website take?</summary><p>Most standard projects can be completed quickly once the required business information, branding, images, and content are available. The exact timeline depends on the package and project scope.</p></details>
+      <details><summary>Is hosting included?</summary><p>This starter website is designed to be hosted on Cloudflare Pages. Your hosting/domain arrangement can be discussed separately depending on your requirements.</p></details>
+      <details><summary>Does the $250 GMB plan guarantee rankings?</summary><p>No ethical SEO service can guarantee a specific Google ranking. The monthly service focuses on improving your Google Business Profile, relevance, completeness, local signals, and ongoing optimization.</p></details>
+      <details><summary>Can you build websites for any local business?</summary><p>Yes. The structure can be adapted for service businesses such as movers, contractors, cleaners, salons, clinics, restaurants, agencies, home services, and many others.</p></details>
+      <details><summary>Can I upgrade my website later?</summary><p>Yes. You can start with a smaller package and expand the website, local SEO, content, and optimization as your business grows.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <h2>Stop being invisible in local search.</h2>
+    <p>Get a professional website and a stronger local presence designed to turn nearby searches into genuine business enquiries.</p>
+    <a href="#contact" class="btn">Let's Build Your Local Presence →</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3><span style="color:#0099cc">Local</span>Boost<span style="color:#ff9933">.</span></h3>
+        <p>Professional business websites and local SEO services designed to help local businesses get discovered, trusted, and contacted online.</p>
+      </div>
+      <div>
+        <h3>Services</h3>
+        <div class="footer-links"><a href="#pricing">Business Websites</a><a href="#pricing">Local SEO</a><a href="#pricing">GMB Optimization</a><a href="#pricing">Conversion Optimization</a></div>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <div class="footer-links"><a href="#contact">Get a Quote</a><a href="mailto:rankedgeup@gmail.com">rankedgeup@gmail.com</a><a href="tel:+923149629099">+92 314 9629099</a><a href="https://relocatejeddah.com/" target="_blank" rel="noopener">RelocateJeddah.com</a><a href="https://moversinriyadh.com/" target="_blank" rel="noopener">MoversInRiyadh.com</a><a href="#faq">FAQs</a></div>
+      </div>
+    </div>
+    <div class="copyright"><span>© 2026 LocalBoost. All rights reserved.</span><span>Built for local business growth.</span></div>
+  </div>
+</footer>
+
+<script>
+function toggleMenu(){
+  const links=document.querySelector('.nav-links');
+  const open=links.style.display==='flex';
+  links.style.display=open?'none':'flex';
+  if(!open){
+    links.style.position='absolute';links.style.top='68px';links.style.left='0';links.style.right='0';
+    links.style.background='#fff';links.style.padding='20px';links.style.flexDirection='column';links.style.alignItems='stretch';
+    links.style.borderBottom='1px solid #e5edf1';
+  }
+}
+</script>
+</body>
+</html>
